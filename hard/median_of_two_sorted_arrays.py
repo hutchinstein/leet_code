@@ -18,8 +18,6 @@ class Solution:
     def set_lc_stats(self, runtime, memory_used, faster_than, lc_num, url, title):
         self.lc = LC(runtime, memory_used, faster_than, lc_num, url, title)
     
-    def get_lc_stats(self):
-        return self.lc
 
 s = Solution()
 nums1 = [1,2]
@@ -27,4 +25,4 @@ nums2 = [3,4]
 s.findMedianSortedArrays(nums1, nums2)
 
 s.set_lc_stats(102, 14.1, .8787, 4, 'https://leetcode.com/problems/median-of-two-sorted-arrays/', 'Median of Two Sorted Arrays')
-print(s.get_lc_stats())
+print(s.lc)
